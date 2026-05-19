@@ -158,7 +158,12 @@ function App() {
               </p>
 
               <div className="hero-actions">
-                <a className="button button-primary" href="#demo">
+                <a
+                  className="button button-primary"
+                  href="https://drive.google.com/drive/folders/18IjKRjj52G-rsoJfG7EWZTRC8--QOwPU"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <span className="play-icon" aria-hidden="true"></span>
                   Watch Demo
                 </a>
