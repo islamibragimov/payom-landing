@@ -782,13 +782,18 @@ main,
 }
 
 .demo-grid {
-  grid-template-columns: minmax(320px, 0.96fr) minmax(0, 1fr);
+  grid-template-columns: 1fr;
+  gap: 30px;
+  max-width: 920px;
 }
 
 .demo-card {
   position: relative;
   isolation: isolate;
+  width: 100%;
+  max-width: 900px;
   padding: 18px;
+  overflow: hidden;
   background:
     linear-gradient(135deg, rgba(37, 99, 235, 0.16), rgba(34, 197, 94, 0.07)),
     rgba(255, 255, 255, 0.08);
@@ -807,9 +812,10 @@ main,
   pointer-events: none;
 }
 
-.demo-screen {
+.demo-video-frame {
   position: relative;
-  min-height: 330px;
+  width: 100%;
+  height: 500px;
   overflow: hidden;
   background:
     radial-gradient(circle at 50% 42%, rgba(56, 189, 248, 0.22), transparent 24%),
@@ -821,66 +827,12 @@ main,
   border-radius: 20px;
 }
 
-.demo-topbar {
-  display: flex;
-  gap: 8px;
-  padding: 18px;
-}
-
-.demo-topbar span {
-  width: 10px;
-  height: 10px;
-  background: rgba(203, 213, 225, 0.42);
-  border-radius: 50%;
-}
-
-.demo-play {
-  position: absolute;
-  inset: 0;
-  display: grid;
-  place-items: center;
-}
-
-.demo-play-icon {
-  display: grid;
-  place-items: center;
-  width: 88px;
-  height: 88px;
-  background: linear-gradient(135deg, var(--blue), var(--electric));
-  border: 1px solid rgba(255, 255, 255, 0.35);
-  border-radius: 50%;
-  box-shadow:
-    0 18px 48px rgba(37, 99, 235, 0.34),
-    0 0 44px rgba(56, 189, 248, 0.28);
-}
-
-.demo-play-icon::after {
-  content: "";
-  width: 0;
-  height: 0;
-  margin-left: 6px;
-  border-top: 15px solid transparent;
-  border-bottom: 15px solid transparent;
-  border-left: 24px solid var(--text);
-}
-
-.demo-progress {
-  position: absolute;
-  left: 22px;
-  right: 22px;
-  bottom: 22px;
-  height: 8px;
-  overflow: hidden;
-  background: rgba(255, 255, 255, 0.14);
-  border-radius: 999px;
-}
-
-.demo-progress span {
+.demo-video-frame iframe {
   display: block;
-  width: 43%;
+  width: 100%;
   height: 100%;
-  background: linear-gradient(90deg, var(--blue), var(--green));
-  border-radius: inherit;
+  border: 0;
+  border-radius: 20px;
 }
 
 .feature-card {
@@ -1452,8 +1404,8 @@ main,
     font-size: 16px;
   }
 
-  .demo-screen {
-    min-height: 252px;
+  .demo-video-frame {
+    height: 260px;
   }
 
   .tech-row {

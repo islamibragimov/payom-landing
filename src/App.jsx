@@ -160,9 +160,7 @@ function App() {
               <div className="hero-actions">
                 <a
                   className="button button-primary"
-                  href="https://drive.google.com/drive/folders/18IjKRjj52G-rsoJfG7EWZTRC8--QOwPU"
-                  target="_blank"
-                  rel="noreferrer"
+                  href="#demo"
                 >
                   <span className="play-icon" aria-hidden="true"></span>
                   Watch Demo
@@ -292,18 +290,13 @@ function App() {
         <section className="section reveal" id="demo">
           <div className="section-inner demo-grid">
             <div className="demo-card" aria-label="Demo video preview">
-              <div className="demo-screen">
-                <div className="demo-topbar">
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                </div>
-                <div className="demo-play">
-                  <span className="demo-play-icon" aria-hidden="true"></span>
-                </div>
-                <div className="demo-progress">
-                  <span></span>
-                </div>
+              <div className="demo-video-frame">
+                <iframe
+                  src="https://drive.google.com/file/d/1STgVUwyIYxq5cQyKq8cTmoRaZ4_NVggD/preview"
+                  title="Payom MVP Demo"
+                  allow="autoplay"
+                  allowFullScreen
+                ></iframe>
               </div>
             </div>
 
