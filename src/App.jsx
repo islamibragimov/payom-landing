@@ -425,7 +425,10 @@ function App() {
                 security, server infrastructure, and launch preparation.
               </p>
             </div>
-            <a className="button button-primary" href="#footer">
+            <a
+              className="button button-primary"
+              href="mailto:islamjonibragimov@gmail.com?subject=Interested%20in%20Payom%20Messenger&body=Hello%20Islomzhon%2C%20I%20am%20interested%20in%20learning%20more%20about%20Payom."
+            >
               Contact Founder
             </a>
           </div>
